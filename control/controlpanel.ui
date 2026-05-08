@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ControlPanel</class>
+ <widget class="QWidget" name="ControlPanel">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>500</width><height>200</height></rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="title">
+     <property name="text"><string>数据下发</string></property>
+     <property name="styleSheet"><string>font-weight:bold; font-size:13px; padding:2px;</string></property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="grid">
+     <item row="0" column="0">
+      <widget class="QLabel" name="lblPt"><property name="text"><string>点位</string></property></widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="comboPoint">
+       <property name="minimumWidth"><number>180</number></property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lblVal"><property name="text"><string>值</string></property></widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QDoubleSpinBox" name="spinValue">
+       <property name="minimumWidth"><number>180</number></property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="btnSend">
+       <property name="text"><string>下发</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelStatus">
+     <property name="text"><string>就绪</string></property>
+     <property name="styleSheet"><string>color:#444; padding:2px;</string></property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="vspacer">
+     <property name="orientation"><enum>Qt::Vertical</enum></property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+</ui>
